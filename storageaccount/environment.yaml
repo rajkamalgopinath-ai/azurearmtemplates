@@ -1,5 +1,5 @@
-name: Batch01AzureStorageAccount
-summary: Azure Storage Account on ARM
-description: Deploys an Azure Storage Account
+name: Batch01AzureOpenAI
+summary: Azure Open AI on ARM
+description: Deploys an Azure Open AI
 runner: ARM
 templatePath: azuredeploy.json
