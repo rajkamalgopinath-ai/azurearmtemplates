@@ -2,7 +2,7 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "storageAccounts_class2024q4batch1_name": {
+        "storageAccountsclass2024q4batch1name": {
             "defaultValue": "class2024q4batch1template1",
             "type": "String"
         }
@@ -12,7 +12,7 @@
         {
             "type": "Microsoft.Storage/storageAccounts",
             "apiVersion": "2023-05-01",
-            "name": "[parameters('storageAccounts_class2024q4batch1_name')]",
+            "name": "[parameters('storageAccountsclass2024q4batch1name')]",
             "location": "eastus",
             "sku": {
                 "name": "Standard_RAGRS",
@@ -83,9 +83,9 @@
         {
             "type": "Microsoft.Storage/storageAccounts/fileServices",
             "apiVersion": "2023-05-01",
-            "name": "[concat(parameters('storageAccounts_class2024q4batch1_name'), '/default')]",
+            "name": "[concat(parameters('storageAccountsclass2024q4batch1name'), '/default')]",
             "dependsOn": [
-                "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_class2024q4batch1_name'))]"
+                "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccountsclass2024q4batch1name'))]"
             ],
             "sku": {
                 "name": "Standard_RAGRS",
@@ -107,9 +107,9 @@
         {
             "type": "Microsoft.Storage/storageAccounts/queueServices",
             "apiVersion": "2023-05-01",
-            "name": "[concat(parameters('storageAccounts_class2024q4batch1_name'), '/default')]",
+            "name": "[concat(parameters('storageAccountsclass2024q4batch1name'), '/default')]",
             "dependsOn": [
-                "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_class2024q4batch1_name'))]"
+                "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccountsclass2024q4batch1name'))]"
             ],
             "properties": {
                 "cors": {
@@ -120,9 +120,9 @@
         {
             "type": "Microsoft.Storage/storageAccounts/tableServices",
             "apiVersion": "2023-05-01",
-            "name": "[concat(parameters('storageAccounts_class2024q4batch1_name'), '/default')]",
+            "name": "[concat(parameters('storageAccountsclass2024q4batch1name'), '/default')]",
             "dependsOn": [
-                "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_class2024q4batch1_name'))]"
+                "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccountsclass2024q4batch1name'))]"
             ],
             "properties": {
                 "cors": {
