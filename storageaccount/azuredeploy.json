@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "storageAccountsclass2024q4batch1name": {
-            "defaultValue": "class2024q4batch1template1",
+            "defaultValue": "class2024q4batch1t1",
             "type": "String"
         }
     },
