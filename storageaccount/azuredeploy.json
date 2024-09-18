@@ -57,9 +57,9 @@
         {
             "type": "Microsoft.Storage/storageAccounts/blobServices",
             "apiVersion": "2023-05-01",
-            "name": "[concat(parameters('storageAccounts_class2024q4batch1_name'), '/default')]",
+            "name": "[concat(parameters('storageAccountsclass2024q4batch1name'), '/default')]",
             "dependsOn": [
-                "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_class2024q4batch1_name'))]"
+                "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccountsclass2024q4batch1name'))]"
             ],
             "sku": {
                 "name": "Standard_RAGRS",
